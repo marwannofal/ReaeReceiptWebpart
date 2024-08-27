@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "read-reaciept-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/readReacieptWebpart/ReadReacieptWebpartWebPart.js",
+          "manifest": "./src/webparts/readReacieptWebpart/ReadReacieptWebpartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ReadReacieptWebpartWebPartStrings": "lib/webparts/readReacieptWebpart/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
